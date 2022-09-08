@@ -1,9 +1,12 @@
 from setuptools import setup, find_packages
 import pymcd
 
-VERSION = '0.1.0' 
+from pathlib import Path
+this_directory = Path(__file__).parent
+
+VERSION = '0.2.0' 
 DESCRIPTION = 'Calculate Mel-Cepstral Distortion (MCD)'
-LONG_DESCRIPTION = 'Python package for calculating Mel-Cepstral Distortion (MCD) value between two audios'
+LONG_DESCRIPTION = (this_directory/"README.md").read_text()
 
 setup(
     name="pymcd", 
@@ -12,6 +15,7 @@ setup(
     author_email="<chenqi.china@outlook.com>",
     description=DESCRIPTION,
     long_description=LONG_DESCRIPTION,
+    long_description_content_type='text/markdown',
     license="MIT",
     readme = "README.md",
     url = "https://github.com/chenqi008/pymcd",
