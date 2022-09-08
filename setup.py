@@ -14,7 +14,7 @@ setup(
     long_description=LONG_DESCRIPTION,
     license="MIT",
     readme = "README.md",
-    url = "",
+    url = "https://github.com/chenqi008/pymcd",
     packages=find_packages(),
     install_requires=[
         "librosa",
