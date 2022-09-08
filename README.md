@@ -1,8 +1,8 @@
-##Project description
+## Project description
 
 This package (pymcd) computes Mel Cepstral Distortion (MCD) in python, which is used to assess the quality of the generated speech by comparing the discrepancy between generated and ground-truth speeches.
 
-##Overview
+## Overview
 
 Mel Cepstral Distortion (MCD) is a measure of how different two sequences of mel cepstra are, which is widely used to evaluate the performance of speech synthesis models. The MCD metric compares k-th (default k=13) Mel Frequency Cepstral Coefficient (MFCC) vectors derived from the generated speech and ground truth, respectively.
 
@@ -14,11 +14,11 @@ The pymcd package provides scripts to compute a variety of forms of MCD score:
 
 More details of the above three types of MCD can be found in [V2C: Visual Voice Cloning](https://openaccess.thecvf.com/content/CVPR2022/papers/Chen_V2C_Visual_Voice_Cloning_CVPR_2022_paper.pdf).
 
-##License
+## License
 
 Please see the file License for details of the license and warranty for mcd.
 
-##Installation
+## Installation
 
 Require Python 3, the package can be installed and updated using pip, i.e.,
 
@@ -26,7 +26,7 @@ Require Python 3, the package can be installed and updated using pip, i.e.,
 pip install -U pymcd
 ```
 
-##Example
+## Example
 
 ```
 from pymcd.mcd import Calculate_MCD
